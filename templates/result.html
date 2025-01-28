@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        p {
+            margin: 10px 0 20px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        li strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Job Categories</h1>
+        <p>Based on your resume, here are the top job categories that match your skills:</p>
+
+        <ul>
+            {% for category, score in recommended_category %}
+                <li><strong>{{ category }}</strong> - Similarity Score: {{ score | round(2) }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Resume Improvement Suggestions</h2>
+        <ul>
+            {% for category, suggestions in improvement_suggestions %}
+                <li>
+                    <strong>{{ category }}</strong>
+                    <ul>
+                        {% for suggestion in suggestions %}
+                            <li>{{ suggestion }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
