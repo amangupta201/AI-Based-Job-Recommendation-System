@@ -1,32 +1,34 @@
 # AI-Based-Job-Recommendation-System
 Welcome to the AI-Based Job Recommendation System repository! This project leverages advanced algorithms and AI to match candidates with jobs based on their skills and qualifications. It's designed to streamline the hiring process for employers and help job seekers find roles that align with their expertise.
 
-Features
+## Features
 AI-Powered Job Recommendations: Matches users to job categories based on their primary and secondary skills.
 Comprehensive Job Categories: Includes a wide variety of fields, from Data Science to Blockchain Development, ensuring diverse opportunities for job seekers.
 Customizable Job Skills Database: Easily expand or modify job categories and their associated skills.
 Interactive User Interface: A seamless and user-friendly experience for both candidates and employers (if integrated with a frontend).
 Scalable Backend: Built to handle large datasets and recommend jobs efficiently.
-Table of Contents
-Installation
-Usage
-Job Categories
-How It Works
-Tech Stack
-Contributing
-License
-Contact
-Installation
+## Table of Contents
+1. Installation
+2. Usage
+3. Job Categories
+4. How It Works
+5. Tech Stack
+6. Contributing
+7. License
+8. Contact
+
+## Installation
 Clone the repository:
 
 git clone https://github.com/your-username/AI-Job-Recommendation-System.git  
 cd AI-Job-Recommendation-System  
-Install dependencies:
+
+## Install dependencies:
 
 pip install -r requirements.txt  
 Run the application:
 python app.py  
-Usage
+ ## Usage
 Upload Resume:
 Upload your resume in one of the supported formats (.pdf, .docx, or .txt).
 
